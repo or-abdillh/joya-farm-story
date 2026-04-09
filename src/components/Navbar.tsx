@@ -25,7 +25,9 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-cream/80 backdrop-blur-lg shadow-sm" : "bg-transparent"
+        scrolled
+          ? "bg-background/90 backdrop-blur-lg shadow-md"
+          : "bg-transparent"
       }`}
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
@@ -38,7 +40,11 @@ const Navbar = () => {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              className={`text-sm font-medium transition-colors ${
+                scrolled
+                  ? "text-foreground/80 hover:text-primary"
+                  : "text-background/80 hover:text-background"
+              }`}
             >
               {l.label}
             </a>
@@ -47,7 +53,7 @@ const Navbar = () => {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity"
+            className="bg-lime text-lime-foreground px-5 py-2.5 rounded-full text-sm font-semibold hover:brightness-110 transition-all"
           >
             Chat WhatsApp
           </a>
@@ -55,7 +61,7 @@ const Navbar = () => {
 
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden p-2 text-foreground"
+          className={`md:hidden p-2 ${scrolled ? "text-foreground" : "text-background"}`}
           aria-label="Toggle menu"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -63,7 +69,7 @@ const Navbar = () => {
       </div>
 
       {open && (
-        <div className="md:hidden bg-cream/95 backdrop-blur-lg border-t border-border pb-4">
+        <div className="md:hidden bg-background/95 backdrop-blur-lg border-t border-border pb-4">
           {navLinks.map((l) => (
             <a
               key={l.href}
@@ -79,7 +85,7 @@ const Navbar = () => {
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold"
+              className="block text-center bg-lime text-lime-foreground px-5 py-2.5 rounded-full text-sm font-semibold"
             >
               Chat WhatsApp
             </a>
