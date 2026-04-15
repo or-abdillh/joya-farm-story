@@ -10,7 +10,7 @@ const navLinks = [
   { label: "FAQ", href: "#faq" },
 ];
 
-const WA_LINK = "https://wa.me/6289608563499";
+const WA_LINK = "https://wa.me/6285291822522";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);

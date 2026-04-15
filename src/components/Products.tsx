@@ -3,7 +3,7 @@ import aqiqahImg from "@/assets/aqiqah-goat.jpg";
 import qurbanImg from "@/assets/qurban-goat.jpg";
 import nabungImg from "@/assets/nabung-kurban.jpg";
 
-const WA_LINK = "https://wa.me/6289608563499";
+const WA_LINK = "https://wa.me/6285291822522";
 
 const products = [
   {

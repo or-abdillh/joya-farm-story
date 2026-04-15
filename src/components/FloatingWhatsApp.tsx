@@ -1,5 +1,5 @@
 const WA_LINK =
-  "https://wa.me/6289608563499?text=Halo%20Joya%20Land!%20Saya%20mau%20tanya%20soal%20qurban%20domba%20dan%20kambing.";
+  "https://wa.me/6285291822522?text=Halo%20Joya%20Land!%20Saya%20mau%20tanya%20soal%20qurban%20domba%20dan%20kambing.";
 
 const FloatingWhatsApp = () => (
   <a

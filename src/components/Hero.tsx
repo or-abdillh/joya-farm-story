@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
 
-const WA_LINK = "https://wa.me/6289608563499";
+const WA_LINK = "https://wa.me/6285291822522";
 
 const badges = [
   { emoji: "✅", text: "Standar Perawatan Higienis" },

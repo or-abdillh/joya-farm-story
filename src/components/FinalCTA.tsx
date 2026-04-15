@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
 
-const WA_LINK = "https://wa.me/6289608563499";
+const WA_LINK = "https://wa.me/6285291822522";
 
 const FinalCTA = () => (
   <section className="relative py-24 md:py-32 overflow-hidden">
@@ -34,7 +34,7 @@ const FinalCTA = () => (
           💬 Chat WhatsApp Sekarang
         </a>
         <div className="flex flex-col sm:flex-row gap-4 justify-center text-primary-foreground/70 text-sm">
-          <span>📞 0896 0856 3499</span>
+          <span>📞 0852-9182-2522</span>
           <span>📸 @joya.land</span>
         </div>
       </motion.div>
