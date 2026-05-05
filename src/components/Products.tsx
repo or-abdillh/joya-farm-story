@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import aqiqahImg from "@/assets/aqiqah-goat.jpg";
-import qurbanImg from "@/assets/qurban-goat.jpg";
-import nabungImg from "@/assets/nabung-kurban.jpg";
+const aqiqahImg = "/images/joya-sheep-image-1.jpeg";
+const qurbanImg = "/images/joya-sheep-image-2.jpeg";
+const nabungImg = "/images/joya-sheep-image-3.jpeg";
 
 const WA_LINK = "https://wa.me/6285291822522";
 
@@ -63,6 +63,7 @@ const Products = () => (
                 src={p.img}
                 alt={p.title}
                 loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               {p.featured && (
