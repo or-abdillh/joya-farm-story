@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
-import { Fredoka, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
+import "@fontsource/fredoka-one/latin-400.css";
 import "./globals.css";
-
-const fredoka = Fredoka({
-  variable: "--font-fredoka",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 const inter = Inter({
   variable: "--font-inter",
@@ -45,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="id"
-      className={`${fredoka.variable} ${inter.variable} h-full antialiased`}
+      className={`${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

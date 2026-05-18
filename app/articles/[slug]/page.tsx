@@ -139,6 +139,7 @@ export default async function ArticleDetailPage({
               fill
               sizes="100vw"
               className="object-cover"
+              unoptimized
             />
           ) : (
             <div className="w-full h-full bg-secondary" />

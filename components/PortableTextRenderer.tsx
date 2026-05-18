@@ -20,6 +20,7 @@ const components: PortableTextComponents = {
             width={800}
             height={600}
             className="w-full rounded-xl object-cover"
+            unoptimized
           />
           {value.caption && (
             <figcaption className="mt-2 text-center text-sm text-foreground/50 italic">
